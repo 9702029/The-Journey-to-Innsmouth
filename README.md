@@ -13,6 +13,6 @@
 
 ## Gui and Logic Planning
 
-![Classdiagram](https://github.com/9702029/The-Journey-to-Innsmouth/blob/main/images/classdiagram1.drawio.png?raw=true)
+
 
 ![Diagram](https://github.com/9702029/The-Journey-to-Innsmouth/blob/main/images/classdiagram1.png?raw=true)
