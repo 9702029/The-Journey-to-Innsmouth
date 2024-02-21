@@ -1,9 +1,9 @@
 # Group Project
 
 ## Members
-  -Boston Brown - developer
-  -Cameron Liddle - group leader
-  -Julia Strong - tester
+  *Boston Brown - developer
+  *Cameron Liddle - group leader
+  *Julia Strong - tester
 
 ## Project Objective
   -create a story that is resource controlled and holds random encounters
