@@ -4,8 +4,8 @@ from Player import Insanity
 from Player import Health
 from Random_encounter import RandomEncounter
 from Shop import Shop
-from getkey import getkey
-from getkey import keys
+#from getkey import getkey
+#from getkey import keys
 import keyboard
 from images import draw_image1
 from images import draw_image2
