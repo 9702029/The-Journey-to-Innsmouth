@@ -8,7 +8,7 @@ x = 2
 y = 2
 screen = pygame.display.set_mode((display_width, display_height))
 clock = pygame.time.Clock()
-testImage = pygame.image.load("GitHub\The-Journey-to-Innsmouth\images\investigatorOffice.png").convert()
+testImage = pygame.image.load("investigatorOffice.png").convert()
 surface1 = pygame.Surface((display_width, display_height))
 
 

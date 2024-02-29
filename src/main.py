@@ -23,14 +23,14 @@ player_health = Health(10)
 random_encounter = RandomEncounter()
 key1 = keyboard.read_key()
 
-draw_image2(image2, 2, 2)
+#draw_image2(image2, 2, 2)
 print("Journey to Innsmouth.")
 input("Press enter to start")
 # if getkey() == keys.ENTER:
 if key1 == 'enter':
   screen.fill(0)
   time.sleep(2)
-  draw_image1(testImage, 2, 2, 0)
+  #draw_image1(testImage, 2, 2, 0)
 
   print("")
   office = """The scene opens in a dimly lit office, rain cracks against 
