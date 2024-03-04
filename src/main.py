@@ -2,7 +2,7 @@ import pygame
 from Player import Sanity
 from Player import Insanity
 from Player import Health
-from Random_encounter import RandomEncounter
+#from Random_encounter import RandomEncounter
 from Shop import Shop
 from getkey import getkey
 from getkey import keys
