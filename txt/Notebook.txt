@@ -1,0 +1,12 @@
+The scene opens in a dimly lit office, rain cracks against glass casting a scattering of dots across the room. A haze gathering from an ash tray chocks the room. A grey weathered man lies feet up on the desk. The night went on like so many others, slummped in my office chiar, cigar sputtering in the ash tray. The radio was playing some the usual rabble, nothing interesting. My eyes glazed from a half empty bottle to the print on my door, Eliase Blackwood, private investigator. Thats when she walked in, her eyes where lit with fear, the kind that eats at you like a hungry rat.He names was Deliala Delorain. She says that her husband disapeared into thin air on a trip to Alaska. But she knows better than to believe in the impossible. She knows that something dark and cruel, something otherworldy had ocured and the thought burned her alive. I'll follow the case of course, that is my job. But first I must get ready. You grab from your desk a pack of smokes, your notebook,1000 in cash , and the pills your doctor perscribed for you headaches.
+
+ What do do first?
+  1: Shop for supplies 
+  2: talk to Delorian 
+  3: Leave to start the case
+#supplies message
+  You stop near your local shop to pick up supplies for the upcoming trip
+#choice 2
+  You walk over to Delorian, she looks at you with a smile, her eyes where glazed with fear. what do you ask her? 1) Where was your huband when he disapeared? 2) Did you see anything when it happened 3) Sorry I bothered you, I get right to the case.     
+
+We were on a fishing trip, he always hated buisy towns so we choose some place remote. Innsmouth I belive the town was called.
