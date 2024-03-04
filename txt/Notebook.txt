@@ -10,3 +10,11 @@ The scene opens in a dimly lit office, rain cracks against glass casting a scatt
   You walk over to Delorian, she looks at you with a smile, her eyes where glazed with fear. what do you ask her? 1) Where was your huband when he disapeared? 2) Did you see anything when it happened 3) Sorry I bothered you, I get right to the case.     
 
 We were on a fishing trip, he always hated buisy towns so we choose some place remote. Innsmouth I belive the town was called.
+
+"Her eyes grow wide and her hands start to tremble, she will show you if that is what you really want. 1) I want to see (this may cause harm) 2) Keep it to yourself    "
+
+"Ok, I'll share what I saw. She grabs a pen and paper and begins to draw. As the lines unfold from the pen your eyes start to ache and mind gets filled with images you dont understand. She puts the pen down and the pain subsides. Sanity-1"
+
+"youd be better off not knowing anyway"
+#first loss
+"You rush out the door eager to get the case started. You head strait to the port a grab the first ride to Massachewsits. When you arive you look around at the bustling city and relise you are completely lost. You wander around, going town by town unable to find anything. after a few weeks you return defeated. Shame you didnt get any more information before starting, maybe you would have been more succesful. THE END"
