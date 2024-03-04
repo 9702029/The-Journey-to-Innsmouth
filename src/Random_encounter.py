@@ -4,11 +4,11 @@ from random import choices
 class RandomEncounter:
 #list of encounters
     encounters = [
-        {"name": "A stuborn mule lies in the middle of the road", "difficulty": 1},
+        {"A stuborn mule lies in the middle of the road. YOu loose an hour waiting for it to pass", "difficulty": 1},
         {"name": "Moderate Encounter", "difficulty": 2},
         {"name": "Hard Encounter", "difficulty": 3},
-        {"name": "Very Hard Encounter", "difficulty": 4},
-        {"name": "Extreme Encounter", "difficulty": 5}
+        {"While travelling the streats you are ambushed by a group of figures with hoods covering their faces, they pull knives out of their pockets. Its clear what their intention is": "Very Hard Encounter", "difficulty": 4},
+        {"": "Extreme Encounter", "difficulty": 5}
     ]
 
     def get_random_encounter(self, Insanity):

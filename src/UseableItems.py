@@ -4,7 +4,7 @@ class Bandages:
     self.bandages = bandage_count
 
   def use_bandage(self, Health):
-    if Health < 10 and self.bandages > 0:
+    if Health < 10 and self.bandages > 0 and Player.Sanity =: 10
       Health += 2
       self.bandages -= 1
       print("Bandage used. Player health increased to", Health)
