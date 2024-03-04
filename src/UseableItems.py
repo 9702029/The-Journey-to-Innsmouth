@@ -26,4 +26,4 @@ class SanityPill:
       print(
           "Cannot use Sanity Pill. Sanity is full or no sanity pills available."
       )
-
+'  '

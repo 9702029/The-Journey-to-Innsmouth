@@ -4,9 +4,8 @@ from Player import Insanity
 from Player import Health
 from Random_encounter import RandomEncounter
 from Shop import Shop
-#from getkey import getkey
-#from getkey import keys
-import keyboard
+from getkey import getkey
+from getkey import keys
 from images import draw_image1
 from images import draw_image2
 from images import testImage
@@ -21,16 +20,14 @@ import sys, time
 player = Sanity(10)
 player_health = Health(10)
 random_encounter = RandomEncounter()
-key1 = keyboard.read_key()
 
-#draw_image2(image2, 2, 2)
+draw_image2(image2, 2, 2)
 print("Journey to Innsmouth.")
 input("Press enter to start")
-# if getkey() == keys.ENTER:
-if key1 == 'enter':
+if getkey() == keys.ENTER:
   screen.fill(0)
   time.sleep(2)
-  #draw_image1(testImage, 2, 2, 0)
+  draw_image1(testImage, 2, 2, 0)
 
   print("")
   office = """The scene opens in a dimly lit office, rain cracks against 
@@ -57,7 +54,7 @@ if key1 == 'enter':
   for char in office:
     print(char, end='')
     sys.stdout.flush()
-    time.sleep(0.05)
+    time.sleep(0.01)
 
 choice = input("")
 
