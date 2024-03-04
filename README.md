@@ -15,7 +15,7 @@
 
 
 
-![Diagram](https://github.com/9702029/The-Journey-to-Innsmouth/blob/main/images/ClassDiagramUpdated.png?raw=true)
+![Diagram](https://github.com/9702029/The-Journey-to-Innsmouth/blob/main/images/ClassDiagramUpdated2.png?raw=true)
 ![firstchoice](https://github.com/9702029/The-Journey-to-Innsmouth/blob/main/Screenshot%202024-02-21%20at%2011.52.51%20AM.png?raw=true)
 
 Replit!
