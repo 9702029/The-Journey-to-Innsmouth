@@ -11,6 +11,12 @@
   * insert images to go allong with the encounters and story elements
   * hold consiquenses and changing stats and equipment
 
+## Future Objectives
+Continue building story 
+add random incounters
+work map as a resource that allows you to travel to points of intrest
+
+
 ## Gui and Logic Planning
 
 
