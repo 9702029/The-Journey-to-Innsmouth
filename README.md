@@ -27,4 +27,4 @@ work map as a resource that allows you to travel to points of intrest
 Replit!
 https://replit.com/@9702029/OutstandingInsecureConnection#innsmouth%20map.gif
 
-### Notice: seems to be functioning in replit but may not be functioning when downloaded (as of 03/11/2024 at 12:35 PM)
+### Notice: seems to be functioning in replit but may not be functioning when downloaded (likely due to possible differences in filepaths)
