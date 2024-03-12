@@ -13,6 +13,7 @@ class Sanity:
         self.Sanity_bar = "Sanity""[" + "=" * self.Sanity + " " * ((10 - self.Sanity) //10) + "]"
     Sanity = 100
 
+
 class Insanity:
   def __init__(self, Insanity):
         self.Insanity = Insanity

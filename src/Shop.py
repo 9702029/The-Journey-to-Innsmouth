@@ -47,4 +47,3 @@ class Shop:
             elif choice == "3":
                 print("Exiting the shop.")
                 break  
-

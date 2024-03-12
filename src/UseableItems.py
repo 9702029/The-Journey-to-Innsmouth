@@ -1,68 +1,42 @@
 import random
+from Player import Health, Sanity, Insanity
+
 
 class Bandages:
-    def __init__(self, bandage_count):
-        self.bandages = bandage_count
 
-    def use_bandage(self, health, sanity):
-        if self.bandages >0 and health < 100:
-            if sanity >= 10:
-                min_healing = 40
-                max_healing = 45
-                failure_chance = 0
-            elif sanity == 9:
-                min_healing = 39
-                max_healing = 43
-                failure_chance = 0
-            elif sanity == 8:
-                min_healing = 38
-                max_healing = 40
-                failure_chance = 2
-            elif sanity == 7:
-                min_healing = 36
-                max_healing = 39
-                failure_chance = 6
-            elif sanity == 6:
-                min_healing = 30
-                max_healing = 35
-                failure_chance = 10
-            elif sanity == 5:
-                min_healing = 25
-                max_healing = 30
-                failure_chance = 20
-            elif sanity == 4:
-                min_healing = 20
-                max_healing = 25
-                failure_chance = 30
-            elif sanity == 3:
-                min_healing = 15
-                max_healing = 20
-                failure_chance = 40
-            elif sanity == 2:
-                min_healing = 10
-                max_healing = 15
-                failure_chance = 50
-            elif sanity == 1:
-                min_healing = 5
-                max_healing = 10
-                failure_chance = 70
-            else:
-                print("Your madness has gotten the best of you. YOU MUST RAISE YOUR SANITY")
-                return
+  def __init__(self, bandage_count):
+    self.bandages = bandage_count
 
-            if random.randint(1, 100) <= failure_chance:
-              self.bandages -= 1
-              print("Bandage failed to heal try you can keep trying but you may want to raise your sanity.")
-              return
-
-            healing_amount = random.randint(min_healing, max_healing)
-            health = min(100, health + healing_amount)
-            self.bandages -= 1
-            print(f"You know have {health}")
-        else:
-            print("Cannot use bandage. No bandages available.")
-
-
+  def use_bandage(self, health, sanity):
+    if self.bandages > 0 and health < 100:
+      healing_data = {
+          10: (40, 45, 0),
+          9: (39, 43, 0),
+          8: (38, 40, 2),
+          7: (36, 39, 6),
+          6: (30, 35, 10),
+          5: (25, 30, 20),
+          4: (20, 25, 30),
+          3: (15, 20, 40),
+          2: (10, 15, 50),
+          1: (5, 10, 70)
+      }
+      if sanity not in healing_data:
+        print(
+            "Your madness has gotten the best of you. YOU MUST RAISE YOUR SANITY"
+        )
+        return
+      min_healing, max_healing, failure_chance = healing_data[sanity]
+      if random.randint(1, 100) <= failure_chance:
+        print(
+            "Bandage failed to heal. You can keep trying but you may want to raise your sanity."
+        )
+        return
+      healing_amount = random.randint(min_healing, max_healing)
+      health = min(100, health + healing_amount)
+      print(f"You now have {health}")
+    else:
+      print("Cannot use bandage. No bandages available.")
 
 
 class SanityPill:
@@ -73,10 +47,44 @@ class SanityPill:
   def use_SP(self, Sanity):
     if Sanity < 10 and self.sanitypills > 0:
       Sanity += 2
-      self.sanitypills -= 1
       print("Sanity Pill used. Player sanity increased to", Sanity)
     else:
       print(
           "Cannot use Sanity Pill. Sanity is full or no sanity pills available."
       )
-'  '
+
+
+class Inventory:
+  from Player import Health, Sanity, Insanity
+
+  def __init__(self, sanitypills, bandages):
+   self.sanitypills = sanitypills
+   self.bandages = bandages
+   self.sanitypill_instance = SanityPill(
+       sanitypills) 
+
+  def displayInventory(self):
+   print("Inventory")
+   print(f"Sanity Pills: {self.sanitypills}")
+   print(f"Bandages: {self.bandages}")
+
+  def main():
+    print("What would you like to do?")
+    print("1. Use Sanity Pill")
+    InventoryM = Inventory(sanitypills=3, bandages=5)
+    Choice = input()
+    if Choice == "1":
+      InventoryM.displayInventory()
+      InventoryM.sanitypill_instance.use_SP(
+     Sanity) 
+    elif Choice == "2":
+      InventoryM.displayInventory()
+      bandages_instance = Bandages(InventoryM.bandages)
+      bandages_instance.use_bandage(Health.Health, Sanity.Sanity)
+      bandages_instance = Bandages(InventoryM.bandages)
+  
+      bandages_instance.use_bandage(Health.Health, Sanity.Sanity)
+    elif Choice == "3":
+      pass
+    else:
+      print("Invalid choice. Please select a valid option.")
