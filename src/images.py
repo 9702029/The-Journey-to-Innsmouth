@@ -83,17 +83,18 @@ def draw_image3(image3, x, y):
 
 
 image4 = pygame.image.load("imagesFolder/ink.png").convert_alpha()
-scaled_image4 = pygame.transform.scale(image4, (1, 1))
+scaled_image4 = pygame.transform.scale(image4, (.75, .75))
 
 
 def draw_image4(image4, x, y):
   running = True
-  display_width = 1280
+  display_width = 539
+  display_height = 768
   screen = pygame.display.set_mode((display_width, display_height))
   start_time = pygame.time.get_ticks()
   display_time = 5000
   scaled_image4 = pygame.transform.scale(
-      image4, (image3.get_width() // 1.5, image4.get_height() // 1.5))
+      image4, (image4.get_width() // 2.5, image4.get_height() // 2.5))
   while running:
     screen.blit(scaled_image4, (x, y))
     pygame.display.flip()

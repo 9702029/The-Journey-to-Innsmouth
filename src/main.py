@@ -21,11 +21,14 @@ from images import draw_image3
 import sys, time
 
 choice = 0
-player = Sanity(100)
-player_health = Health(100)
+player = Sanity(10)
+player_health = Health(10)
+#following line of code gets rid of error with insanity
+player_insanity = Insanity(0)
 random_encounter = RandomEncounter()
 
 draw_image2(image2, 2, 2)
+#for some reason it works/runs better when no keys at all are pressed (including enter) prior to the "Press enter to start" line appears, or else it just stops running 
 print("Journey to Innsmouth.")
 enterInput = input("Press enter to start")
 #if getkey() == keys.ENTER:
@@ -79,7 +82,12 @@ if enterInput == "":
     print("")
     #it starts at 0 so content 10 is line 11, which is blank, so content 9 is the correct line
     content9 = content[9]
-    print(content9)
+    
+    for char in content9:
+      print(char, end='')
+      sys.stdout.flush()
+      time.sleep(0.06)
+      
     choice2 = input("What's your choice?")
     if choice2 == 1 or choice2 == "1" or choice2 == '1':
       print("")
@@ -93,10 +101,11 @@ if enterInput == "":
         print("")
         print(content[15])
         player.Sanity -= 1
-        player.Insanity += 1
+        player_insanity.Insanity += 1
         print(player.Sanity_bar)
-        draw_image4(image4, 2, 2)
         screen.fill(0)
+        #the image appears now
+        draw_image4(image4, 100, 2)
 
       elif choice3 == 2 or choice3 == "1" or choice3 == '1':
         print("")
