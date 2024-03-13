@@ -8,7 +8,7 @@ x = 2
 y = 2
 screen = pygame.display.set_mode((display_width, display_height))
 clock = pygame.time.Clock()
-testImage = pygame.image.load("imagesFolder/investigatorOffice.png").convert()
+testImage = pygame.image.load("investigatorOffice.png").convert()
 pygame.display.set_caption("The Journey to Innsmouth")
 surface1 = pygame.Surface((display_width, display_height))
 
@@ -34,7 +34,7 @@ def draw_image1(testImage, x, y, display_time):
     # displayTime = clock.tick(60) / 1000
 
 
-image2 = pygame.image.load("imagesFolder/gamestart.png").convert_alpha()
+image2 = pygame.image.load("gamestart.png").convert_alpha()
 scaled_image2 = pygame.transform.scale(image2, (1, 1))
 
 
@@ -58,7 +58,7 @@ def draw_image2(image2, x, y):
     #displayTime = clock.tick(60) / 1000
 
 
-image3 = pygame.image.load("imagesFolder/Drawing(1).png").convert_alpha()
+image3 = pygame.image.load("Drawing(1).png").convert_alpha()
 scaled_image3 = pygame.transform.scale(image3, (1, 1))
 
 
@@ -82,7 +82,7 @@ def draw_image3(image3, x, y):
     #displayTime = clock.tick(60) / 1000
 
 
-image4 = pygame.image.load("imagesFolder/ink.png").convert_alpha()
+image4 = pygame.image.load("ink.png").convert_alpha()
 scaled_image4 = pygame.transform.scale(image4, (.75, .75))
 
 
