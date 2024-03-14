@@ -105,7 +105,7 @@ if enterInput == "":
         print(player.Sanity_bar)
         screen.fill(0)
         #the image appears now
-        draw_image4(image4, 100, 2)
+        draw_image4(image4, 2, 2)
 
       elif choice3 == 2 or choice3 == "1" or choice3 == '1':
         print("")
