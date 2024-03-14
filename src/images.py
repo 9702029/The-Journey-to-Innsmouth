@@ -41,13 +41,13 @@ scaled_image2 = pygame.transform.scale(image2, (1, 1))
 
 def draw_image2(image2, x, y):
   running = True
-  display_width = 1280
-  display_height = 720
+  display_width = 640
+  display_height = 360
   screen = pygame.display.set_mode((display_width, display_height))
   start_time = pygame.time.get_ticks()
   display_time = 5000
   scaled_image2 = pygame.transform.scale(
-      image2, (image2.get_width() // 1, image2.get_height() // 1))
+      image2, (image2.get_width() // 2, image2.get_height() // 2))
   while running:
     screen.blit(scaled_image2, (x, y))
     pygame.display.flip()
