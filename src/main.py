@@ -122,3 +122,4 @@ if enterInput == "":
       print(char, end='')
       sys.stdout.flush()
       time.sleep(0.05)
+  file.close()  
